@@ -1,6 +1,6 @@
 # Azure Platform Setup — insurance RAG LLMOps (Dev + Prod)
 
-Run the CLI from Azure Cloud Shell or Git Bash. Scripts live in `infra/
+Uses Git Bash.
 
 ## 1) Naming convention
 
@@ -25,7 +25,7 @@ Azure creates one per subscription (location: Global), not one per environment.
 - `{region}` = `chn` (Switzerland North)
 - `8167` is a uniqueness suffix (from your subscription prefix already used in storage names)
 
-Existing insurance RAG services (OpenAI, AI Search, Cosmos, Redis, Document Intelligence) can stay shared at first. Isolate them later if Dev must never touch Prod data.
+Insurance RAG services (OpenAI, AI Search, Cosmos, Redis, Document Intelligence) stay shared.
 
 ## 2) Login and subscription
 
