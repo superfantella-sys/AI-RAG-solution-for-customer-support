@@ -135,7 +135,7 @@ I have **not** copied OpenAI/Search/Cosmos keys into the vault yet. That is a fo
 
 No client secret.
 
-**Why:** OIDC is the current GitHub–Azure pattern. A password in GitHub Secrets would be a long-lived key. One app, two federated subjects, keeps Dev and Prod deploys in the same identity but scoped by GitHub Environment approval on **prod**.
+**Why:** OIDC is the current GitHub–Azure pattern. A password in GitHub Secrets would be a long-lived key. One app, two federated subjects, Dev and Prod deploys in the same identity but scoped by GitHub Environment approval on **prod**.
 
 Role assignments: **Contributor** on each LLMOps RG, **AcrPush** on each ACR.
 
@@ -146,7 +146,6 @@ Role assignments: **Contributor** on each LLMOps RG, **AcrPush** on each ACR.
 | Not created | Why |
 |---|---|
 | VNet + private endpoints | I are not in locked-down Prod yet; add when you harden |
-| New App Insights on the old RAG | Leave `pretrainmodel7702744053` on the live app |
 | Key Vault secrets populated | I still use `.env` locally;
 | Smart Detection action group in Prod | Subscription-wide, created with first App Insights |
 
