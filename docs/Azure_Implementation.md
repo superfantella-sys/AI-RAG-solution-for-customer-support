@@ -2,8 +2,6 @@
 
 The original notebook provisioned **Azure Machine Learning** workspaces, CPU clusters, sklearn/torch environments, train/validate components, champion/challenger model aliases, and AML online/batch endpoints.
 
-That lifecycle does **not** fit this RAG:
-
 | LLMOps RAG (this repo) |
 |---|
 | Azure Container Apps|
