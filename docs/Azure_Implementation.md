@@ -6,8 +6,8 @@ That lifecycle does **not** fit this RAG:
 
 | LLMOps RAG (this repo) |
 |---|
-| Azure Container Apps (already live) |
-| Retrieval + generation + DeepEval (later) |
+| Azure Container Apps|
+| Retrieval + generation + DeepEval|
 | Version Docker images of API + UI |
 | `ca-insurancerag-api-{env}-chn` + `ca-insurancerag-web-{env}-chn` |
 | Image tag = git SHA; Prod promoted from `dev` |
@@ -30,7 +30,7 @@ This builds `insurancerag-api` and `insurancerag-web` in ACR, then creates:
 
 Same names with `prod` for production.
 
-## 2) Wire secrets (do not commit values)
+## 2) Wire secrets
 
 Copy keys from `.env` into Container App secrets. Example for the **dev API**:
 
@@ -57,7 +57,7 @@ az containerapp update -g $RG -n $API --set-env-vars \
   COSMOS_ENDPOINT="https://historicalchat.documents.azure.com:443/" \
   COSMOS_DATABASE_NAME=insurance_db
 
-## 3) Manual deploy (same path GitHub Actions uses)
+## 3) Manual deploy
 
 ```bash
 bash infra/deploy-containerapps.sh dev local-test
