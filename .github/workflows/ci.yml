@@ -35,7 +35,7 @@ jobs:
 
       - name: Verify Dockerfiles assemble
         run: |
-          python infra/docker/make_production_layout.py --src . --dest /tmp/sanitasrag-layout
-          test -f /tmp/sanitasrag-layout/Production/backend/API_backend/backend_main_sanitas.py
-          test -f /tmp/sanitasrag-layout/Production/frontend/frontend.py
-          test -f /tmp/sanitasrag-layout/governance/governance_gate.py
+          python infra/docker/make_production_layout.py --src . --dest /tmp/insurancerag-layout
+          test -f /tmp/insurancerag-layout/Production/backend/API_backend/backend_main_insurance.py
+          test -f /tmp/insurancerag-layout/Production/frontend/frontend.py
+          test -f /tmp/insurancerag-layout/governance/governance_gate.py

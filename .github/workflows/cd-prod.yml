@@ -34,10 +34,10 @@ jobs:
     environment: prod
     env:
       ENV_NAME: prod
-      RG: rg-sanitasrag-prod-chn
+      RG: rg-insurancerag-prod-chn
       ACR: acrsragprodchn8167
-      API: ca-sanitasrag-api-prod-chn
-      WEB: ca-sanitasrag-web-prod-chn
+      API: ca-insurancerag-api-prod-chn
+      WEB: ca-insurancerag-web-prod-chn
     steps:
       - name: Checkout
         uses: actions/checkout@v4

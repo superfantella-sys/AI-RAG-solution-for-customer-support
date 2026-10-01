@@ -69,12 +69,12 @@ Golden quality eval (pass rate / empty retrieval) remains a **separate hard gate
 
 - Live UI: ask a normal policy question → grounded answer  
 - Live UI: paste obvious PII or a jailbreak-style prompt → **blocked** message (see screenshot)  
-- Docs: this page + [MONITORING.md](MONITORING.md) for how block rate is observed in Prod  
+- Docs: this page + [LLMOps_CICD_Monitoring_Performance.md](LLMOps_CICD_Monitoring_Performance.md) for how block rate is observed in Prod  
 
 ---
 
 ## Related
 
 - [Architecture](Architecture.md) — request path  
-- [MONITORING.md](MONITORING.md) — dashboard KPIs including governance block %  
+- [LLMOps_CICD_Monitoring_Performance.md](LLMOps_CICD_Monitoring_Performance.md) — dashboard KPIs including governance block %  
 - README screenshots: `docs/screenshots/governance_block.png`

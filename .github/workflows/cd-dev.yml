@@ -34,10 +34,10 @@ jobs:
     environment: dev
     env:
       ENV_NAME: dev
-      RG: rg-sanitasrag-dev-chn
+      RG: rg-insurancerag-dev-chn
       ACR: acrsragdevchn8167
-      API: ca-sanitasrag-api-dev-chn
-      WEB: ca-sanitasrag-web-dev-chn
+      API: ca-insurancerag-api-dev-chn
+      WEB: ca-insurancerag-web-dev-chn
     steps:
       - name: Checkout
         uses: actions/checkout@v4

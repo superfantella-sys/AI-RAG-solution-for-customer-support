@@ -27,7 +27,7 @@ Application source is **private**. This public repo is the **product + LLMOps st
 |---|---|
 | [docs/Architecture.md](docs/Architecture.md) | Request path and environments |
 | [docs/GOVERNANCE.md](docs/GOVERNANCE.md) | PII, Prompt Shields, adversarial soft report |
-| [docs/MONITORING.md](docs/MONITORING.md) | App Insights workbook, SLOs, CD gates |
+| [docs/LLMOps_CICD_Monitoring_Performance.md](docs/LLMOps_CICD_Monitoring_Performance.md) | CI/CD, monitoring and performance: how they connect |
 
 ---
 

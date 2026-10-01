@@ -26,7 +26,7 @@ Details: [GOVERNANCE.md](GOVERNANCE.md).
 | `rg-insurancerag-shared-chn` | Foundry / OpenAI deployments (chat + embeddings) |
 | Shared / legacy data plane | Search, Cosmos, Redis, Document Intelligence, blobs (shared or migrated as needed) |
 
-Each env has its own **Log Analytics + Application Insights**. Live KPIs and dig-down live in the Prod workbook — see [MONITORING.md](MONITORING.md).
+Each env has its own **Log Analytics + Application Insights**. Live KPIs and dig-down live in the Prod workbook — see [LLMOps_CICD_Monitoring_Performance.md](LLMOps_CICD_Monitoring_Performance.md).
 
 ## Lifecycle
 
