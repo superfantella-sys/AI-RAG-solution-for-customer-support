@@ -2,7 +2,7 @@
 
 Multilingual **customer-support RAG** for **basic and complementary health insurance** (EN / FR / DE / IT). Advisors and customers ask coverage questions; the system answers only from indexed policy documents (knowledge base).
 
-Application source is **private**. This public repo is the **product + LLMOps story** for recruiters and interviewers.
+Application source is **private**. This public repo is the **product + LLMOps story**.
 
 ---
 
@@ -137,6 +137,6 @@ What is in place and working:
 
 ## What is not in this repository
 
-Application Python, Dockerfiles used to ship the app, `.env`, and secret scripts. Available in a private repo for technical interviews.
+Application Python, Dockerfiles used to ship the app, `.env`, and secret scripts. Available in a private repo.
 
 Setup / assumption notes under `docs/` (e.g. Azure platform setup) are optional deep dives — start with Architecture, Governance, and Monitoring above.

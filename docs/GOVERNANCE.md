@@ -2,7 +2,7 @@
 
 How the insurance RAG chatbot **blocks unsafe or non-compliant turns** before (and after) the model answers.
 
-This is the public, recruiter-oriented summary. Application source stays in a private repository.
+This is the public summary for Goverance. Application source stays in a private repository.
 
 ---
 
@@ -65,7 +65,7 @@ Golden quality eval (pass rate / empty retrieval) remains a **separate hard gate
 
 ---
 
-## What recruiters can verify
+## What people can verify
 
 - Live UI: ask a normal policy question → grounded answer  
 - Live UI: paste obvious PII or a jailbreak-style prompt → **blocked** message (see screenshot)  

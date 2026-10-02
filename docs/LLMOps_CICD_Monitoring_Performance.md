@@ -130,7 +130,7 @@ The workbook is organised around three questions an operator asks in order: **Is
 
 Each step of the RAG pipeline (retrieval, embedding, search, LLM generation, input/output governance) is wrapped in an OpenTelemetry span, so its duration and outcome are measured separately.
 
-Extract — the span helper (`src/telemetry_context_insurance.py`):
+Extract — the span helper (`src/telemetry_context.py`):
 
 ```python
 @contextmanager
@@ -153,7 +153,7 @@ def span_perf(name: str, attrs: Optional[Dict[str, Any]] = None) -> Iterator[Any
 
 The docstring records a real production lesson: an earlier version swallowed exceptions inside the span helper, which silently dropped the parent workflow span and made the dashboard rates wrong. The fix is a constraint written into the code.
 
-Extract — KPI stamping on the chat request (`src/agent_orchestrator_insurance.py`):
+Extract — KPI stamping on the chat request (`src/agent_orchestrator.py`):
 
 ```python
 chat_kpi = {

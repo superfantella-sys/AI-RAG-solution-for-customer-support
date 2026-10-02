@@ -1,4 +1,4 @@
-# Architecture one-pager
+# Architecture
 
 ## Request path
 

@@ -26,8 +26,8 @@ LMOps for this app is: build images, push to ACR, deploy Container Apps, gate Pr
 
 | Layer | What | Isolated per env? |
 |---|---|---|
-| **Hosting (new)** | Resource groups, ACR, Container Apps, Key Vault, logs, App Insights | Yes — one set in Dev, one in Prod |
-| **RAG data/AI (existing)** | OpenAI, AI Search, Cosmos, Redis, Document Intelligence, policy blob storage | **Shared for now** — both apps call the same services |
+| **Hosting** | Resource groups, ACR, Container Apps, Key Vault, logs, App Insights | Yes — one set in Dev, one in Prod |
+| **RAG data/AI** | OpenAI, AI Search, Cosmos, Redis, Document Intelligence, policy blob storage | **Shared for now** — both apps call the same services |
 
 **Why share the AI layer:** Those services already hold the index, embeddings, chat history, and documents. Duplicating them would mean two indexes, two Cosmos accounts, and two OpenAI deployments. That is a later isolation step, not required to start Dev/Prod deploys.
 
@@ -41,7 +41,7 @@ Scripts export `MSYS_NO_PATHCONV=1` so ARM ids (`/subscriptions/...`) are not re
 
 ---
 
-## 2. New resources (created by `setup-platform.sh`)
+## 2. Resources(created by `setup-platform.sh`)
 
 ### Resource group — `rg-insurancerag-{env}-chn`
 
@@ -145,7 +145,7 @@ Role assignments: **Contributor** on each LLMOps RG, **AcrPush** on each ACR.
 
 | Not created | Why |
 |---|---|
-| VNet + private endpoints | I are not in locked-down Prod yet; add when you harden |
+| VNet + private endpoints | I am not in locked-down Prod yet; add if it is required |
 | Key Vault secrets populated | I still use `.env` locally;
 | Smart Detection action group in Prod | Subscription-wide, created with first App Insights |
 
