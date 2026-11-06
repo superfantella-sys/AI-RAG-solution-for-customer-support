@@ -4,6 +4,8 @@ Multilingual **customer-support RAG** for **basic and complementary health insur
 
 Application source is **private**. This public repo is the **product + LLMOps story**.
 
+The insurance name, "Sanitas," is my provider, not the customer. 
+
 ---
 
 ## Project summary
@@ -18,8 +20,8 @@ Application source is **private**. This public repo is the **product + LLMOps st
 
 | | UI | API |
 |---|---|---|
-| **Dev** | [Web](https://ca-insurancerag-web-dev-chn.braveisland-7adede75.switzerlandnorth.azurecontainerapps.io/) | [Swagger](https://ca-insurancerag-api-dev-chn.braveisland-7adede75.switzerlandnorth.azurecontainerapps.io/docs) |
-| **Prod** | [Web](https://ca-insurancerag-web-prod-chn.greenground-3327a232.switzerlandnorth.azurecontainerapps.io/) | [Swagger](https://ca-insurancerag-api-prod-chn.greenground-3327a232.switzerlandnorth.azurecontainerapps.io/docs) |
+| **Dev** | [Web](https://ca-sanitasrag-web-dev-chn.braveisland-7adede75.switzerlandnorth.azurecontainerapps.io/) | [Swagger](https://ca-sanitasrag-api-dev-chn.braveisland-7adede75.switzerlandnorth.azurecontainerapps.io/docs) |
+| **Prod** | [Web](https://ca-sanitasrag-web-prod-chn.greenground-3327a232.switzerlandnorth.azurecontainerapps.io/) | [Swagger](https://ca-sanitasrag-api-prod-chn.greenground-3327a232.switzerlandnorth.azurecontainerapps.io/docs) |
 
 **Docs to read first**
 
