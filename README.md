@@ -92,7 +92,7 @@ Solo build (product + platform), including:
 
 ---
 
-## Results / impact
+## Results/impact
 
 What is in place and working:
 
@@ -109,7 +109,7 @@ What is in place and working:
 
 - **TLS 1.0/1.1 retirement** on new storage accounts → **TLS 1.2** only  
 - **Same Docker layout** as the original `Production.*` imports  
-- **Secrets vs env vars:** secrets do nothing until mapped with `secretref:`  
+- **Secrets vs env vars:** secrets do nothing until mapped with `secretref:.`  
 - **Jailbreak / system-bypass** beyond English regex → Azure **Prompt Shields** as primary multilingual control  
 
 ---
@@ -131,7 +131,7 @@ What is in place and working:
 
 1. **Data isolation:** optional Dev index / Cosmos so Prod data is never used in experiments  
 2. **Private networking** for real Prod (VNet, private endpoints)  
-3. **Deeper eval:** faithfulness / relevancy judges as an additional deploy signal  
+3. **Deeper eval:** faithfulness/relevancy judges as an additional deploy signal  
 4. **Key Vault references** instead of Container App secrets only  
 5. **Workbook polish:** denser metric rows (less scrolling) once telemetry stamps are fully consistent in Prod  
 
@@ -139,6 +139,6 @@ What is in place and working:
 
 ## What is not in this repository
 
-Application Python, Dockerfiles used to ship the app, `.env`, and secret scripts. Available in a private repo.
+Application Python, Dockerfiles used to ship the app, `.env`, and secret scripts. Available in a private repo. Also, the UI is deployed in Prod as React rather than the Streamlit prototype as shown here.
 
-Setup / assumption notes under `docs/` (e.g. Azure platform setup) are optional deep dives — start with Architecture, Governance, and Monitoring above.
+Setup/assumption notes under `docs/` (e.g., Azure platform setup) are optional deep dives — start with Architecture, Governance, and Monitoring above.
